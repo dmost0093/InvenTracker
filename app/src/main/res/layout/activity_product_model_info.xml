@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AddInventoryActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+    
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/Input_Product_Information" />
+        
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/product_order"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+        
+        <View style="@style/Spacer.Large" />
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/product_name"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_span="6" />
+            </TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/category_id"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editCategoryId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_span="6" />
+            </TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/cost"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_span="6" />
+            </TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/msrp"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editMsrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_span="6" />
+            </TableRow>
+        
+        </TableLayout>
+        
+        <TextView
+            android:id="@+id/errorMessage"
+            style="@style/ErrorMessage" />
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/confirm" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

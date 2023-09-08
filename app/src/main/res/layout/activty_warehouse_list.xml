@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.LinearLayout">
+    
+    <View style="@style/Divider.Thin" />
+    <View style="@style/Spacer.Medium" />
+    
+    <TextView
+        android:id="@+id/textTitle"
+        style="@style/HomePageHeader"
+        android:text="@string/warehouses" />
+    
+    <View style="@style/Spacer.Medium" />
+    <View style="@style/Divider.Thin" />
+    <View style="@style/Spacer.Large" />
+    
+    <ListView
+        android:id="@+id/liveViewWarehouse"
+        style="@style/ListModern"
+        tools:listitem="@layout/listitem_warehouse"
+        android:layout_height="414dp"
+        android:layout_width="378dp" />
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/Button.Action.Add"
+        android:text="Add"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+</LinearLayout>

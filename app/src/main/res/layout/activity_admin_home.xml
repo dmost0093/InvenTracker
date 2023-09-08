@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AdminHomeActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="Admin Home" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical">
+        <Button
+            android:id="@+id/buttonLookupModelNumber"
+            style="@style/Button.Home"
+            android:text="Add Warehouse"
+            android:onClick="buttonAddWarehouse" />
+    
+        <Button
+            android:id="@+id/buttonViewCategories"
+            style="@style/Button.Home"
+            android:text="Add Category"
+            android:onClick="buttonAddCategory" />
+        <Button
+            android:id="@+id/buttonAddProductModel"
+            style="@style/Button.Home"
+            android:text="Add Product Model"
+            android:onClick="buttonAddProductModel" />
+        <Button
+            android:id="@+id/buttonAddUser"
+            style="@style/Button.Home"
+            android:text="Add User"
+            android:onClick="buttonAddUser" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF"
+    android:translationZ="6dp">
+    
+    <LinearLayout style = "@style/LinearLayoutContent">
+        
+        <View style = "@style/Spacer.Medium"/>
+        <View style = "@style/Divider.Thin"/>
+        <View style = "@style/Spacer.Large"/>
+        
+        <TextView
+            android:id = "@+id/textTitle"
+            style = "@style/HomePageHeader"
+            android:text = "@string/warehouse_info" />
+        
+        <View style = "@style/Spacer.Medium" />
+        <View style = "@style/Divider.Thin" />
+        <View style = "@style/Spacer.Large" />
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/WarehouseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/text_black"
+        android:text="@string/mock_warehouse_name" />
+    
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capacity_label" />
+        
+        <TextView
+            android:id="@+id/WarehouseCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/mock_capacity" />
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/space_in_use_label" />
+        
+        <TextView
+            android:id="@+id/WarehouseSpaceInUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/mock_space_in_use" />
+    
+    </LinearLayout>
+    
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+        <ProgressBar
+            android:id="@+id/warehousePercentProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:max="100"
+            android:progress="15"
+            android:indeterminate="false" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/WarehousePercentFull"
+            style="@style/TableRow.Large.Value"
+            android:textColor="@color/text_black"
+            android:text="@string/mock_percent" />
+    </FrameLayout>
+    
+    
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Update" />
+    
+</LinearLayout>

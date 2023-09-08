@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.LinearLayout"
+    tools:context="comp3350.inventracker.ui.ViewItemActivity">
+    
+    <View style="@style/Divider.Thin" />
+    <View style="@style/Spacer.Medium" />
+    
+    <TextView
+        style="@style/TextViewTitle"
+        android:id="@+id/productModelName"
+        android:text="@string/mock_product_model_name"
+        android:gravity="center_vertical"
+        />
+    
+    <View style="@style/Spacer.Medium" />
+    <View style="@style/Divider.Thin" />
+    <View style="@style/Spacer.Large" />
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_model_number" />
+            <TextView
+                android:id="@+id/modelNumber"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_product_model_number" />
+        </TableRow>
+    
+        <TableRow>
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_category" />
+            <TextView
+                android:id="@+id/productCategory"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_category_name" />
+        </TableRow>
+    
+        <TableRow>
+        
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_size" />
+            <TextView
+                android:id="@+id/productSize"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_size" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_warehouse"
+                 />
+    
+            <TextView
+                android:id="@+id/warehouseNameValue"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_warehouse_name"
+                 />
+        </TableRow>
+    
+        <TableRow>
+        
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_arrived"
+                />
+        
+            <TextView
+                android:id="@+id/arrivalDateValue"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_arrival_date"
+                />
+    
+        </TableRow>
+    </TableLayout>
+    
+    <View style="@style/Spacer.Large" />
+    <View style="@style/Divider.Thin" />
+    
+    <View style="@style/Spacer.Large" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+    
+        <Button
+            android:id="@+id/myImageButtonRemove"
+            style="@style/Button.Action.Remove"
+            android:text="@string/remove"
+            android:onClick="buttonRemoveInventory" />
+    
+        <!-- Spacer View with 16dp width -->
+        <View
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+    
+        <Button
+            android:id="@+id/myImageButtonMoveWarehouse"
+            style="@style/Button.Action.Remove"
+            android:text="@string/move"
+            android:onClick="buttonMoveWarehouse" />
+
+    </LinearLayout>
+    
+    <View style="@style/Spacer.Large" />
+    <View style="@style/Divider.Thin" />
+    
+</LinearLayout>

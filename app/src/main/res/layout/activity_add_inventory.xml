@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AddInventoryActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/add_item" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Product Order"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+    
+        <View style="@style/Spacer.Large" />
+    
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+        
+            <TableRow><View style="@style/Spacer.Large" /></TableRow>
+        
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/warehouse"
+                    android:layout_span="4" />
+    
+                <Spinner
+                    android:id="@+id/warehouseIdDropdown"
+                    android:inputType="number"
+                    android:layout_span="8"
+                    android:minHeight="50dp" />
+                
+            </TableRow>
+    
+            <TableRow><View style="@style/Spacer.Large" /></TableRow>
+    
+        </TableLayout>
+    
+        <TextView
+            android:id="@+id/errorMessage"
+            style="@style/ErrorMessage" />
+    
+        <View style="@style/Spacer.Large" />
+    
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/confirm"
+            android:onClick="onSubmit"/>
+    
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.HomeActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/title_activity_home" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical">
+    
+        <TextView
+            style="@style/SubHeader"
+            android:text="@string/search" />
+        
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/Button.Home"
+            android:text="@string/product_search"
+            android:onClick="buttonSearch" />
+    
+        <Button
+            android:id="@+id/buttonAdvancedSearch"
+            style="@style/Button.Home"
+            android:text="@string/advanced_search"
+            android:onClick="buttonAdvancedSearch" />
+    
+        <TextView
+            style="@style/SubHeader"
+            android:text="@string/view" />
+    
+        <Button
+            android:id="@+id/buttonViewInventory"
+            style="@style/Button.Home"
+            android:text="@string/view_product_models"
+            android:onClick="buttonViewProductModels" />
+    
+        <Button
+            android:id="@+id/buttonViewCategories"
+            style="@style/Button.Home"
+            android:text="@string/view_categories"
+            android:onClick="buttonViewCategories" />
+    
+        <Button
+            android:id="@+id/buttonWarehouses"
+            style="@style/Button.Home"
+            android:text="@string/view_warehouses"
+            android:onClick="buttonViewWarehouse" />
+    
+        <TextView
+            style="@style/SubHeader"
+            android:text="@string/edit" />
+        
+        <Button
+            android:id="@+id/buttonAdmin"
+            style="@style/Button.Home"
+            android:text="@string/admin"
+            android:onClick="buttonAdmin" />
+    
+        <Button
+            android:id="@+id/buttonAccount"
+            style="@style/Button.Home"
+            android:text="@string/account"
+            android:onClick="buttonAccount" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

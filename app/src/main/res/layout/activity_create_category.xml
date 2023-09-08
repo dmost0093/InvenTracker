@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AddInventoryActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+        
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/input_category_information" />
+        
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+    
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+    
+        <View style="@style/Spacer.Large" />
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            
+            <TableRow><View style="@style/Spacer.Large" /></TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/category_name"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editCategoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_span="6" />
+            </TableRow>
+            
+            <TableRow><View style="@style/Spacer.Large" /></TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/storage_space"
+                    android:layout_span="6" />
+                
+                <EditText
+                    android:id="@+id/editStorageSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_span="6" />
+            </TableRow>
+        
+        </TableLayout>
+        
+        <TextView
+            android:id="@+id/errorMessage"
+            style="@style/ErrorMessage" />
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/confirm" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

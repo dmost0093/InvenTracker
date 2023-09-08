@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF"
+    android:translationZ="6dp">
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF">
+        
+        <TableRow>
+            
+            <TextView
+                android:id="@+id/WarehouseLocation"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_warehouse_name"
+                android:textSize="25sp"
+                android:textColor="@color/text_black"
+                android:layout_span="6" />
+            
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_span="6">
+                
+                <ProgressBar
+                    android:id="@+id/warehousePercentProgressBar"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:progressDrawable="@drawable/custom_progress_bar"
+                    android:max="100"
+                    android:progress="15"
+                    android:indeterminate="false"
+                    />
+    
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/WarehousePercentFull"
+                    style="@style/TableRow.Large.Value"
+                    android:textColor="@color/text_black"
+                    android:text="@string/mock_percent"
+                    />
+            </FrameLayout>
+        </TableRow>
+        
+        <TableRow>
+    
+            <TextView
+                style="@style/TableRow.Large.Value"
+                android:text="@string/capacity_label"
+                android:layout_span="6" />
+            
+            <TextView
+                android:id="@+id/WarehouseCapacity"
+                style="@style/TableRow.Large"
+                android:layout_span="6"
+                android:text="@string/mock_capacity" />
+
+        </TableRow>
+    
+        <TableRow>
+            
+            <TextView
+                style="@style/TableRow.Large.Value"
+                android:text="@string/space_in_use_label"
+                android:layout_span="6" />
+            
+            <TextView
+                android:id="@+id/WarehouseSpaceInUse"
+                style="@style/TableRow.Large"
+                android:layout_span="4"
+                android:text="@string/mock_space_in_use" />
+            
+        </TableRow>
+    
+    </TableLayout>
+
+</LinearLayout>

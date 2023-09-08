@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:translationZ="4dp"
+    android:background="@drawable/list_item_selector">
+    
+    <TableRow>
+    
+        <TextView
+            android:id="@+id/modelNameValue"
+            style="@style/TableRow.Header"
+            android:text="@string/mock_product_model_name"
+            android:layout_span="12" />
+    
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Large.Label"
+            android:text="@string/display_model_number"
+            android:layout_span="3" />
+        
+        <TextView
+            android:id="@+id/modelNumberValue"
+            style="@style/TableRow.Large.Value"
+            android:text="@string/mock_product_model_number"
+            android:layout_span="3" />
+        
+        <TextView
+            android:id="@+id/modelMSRP"
+            style="@style/TableRow.Large.Value"
+            android:text="@string/mock_msrp"
+            android:textAlignment="textEnd"
+            android:layout_span="6" />
+    
+    </TableRow>
+    
+    <TableRow>
+    
+        <TextView
+            style="@style/TableRow.Large.Label"
+            android:text="@string/display_qty"
+            android:layout_span="3" />
+    
+        <TextView
+            android:id="@+id/modelQuantityValue"
+            style="@style/TableRow.Large.Value"
+            android:text="@string/mock_quantity"
+            android:layout_span="3" />
+    
+        <TextView
+            android:id="@+id/modelCategoryName"
+            style="@style/TableRow.Small.Category"
+            android:text="@string/mock_category_name"
+            android:textAlignment="textEnd"
+            android:layout_span="6" />
+    
+    </TableRow>
+
+</TableLayout>

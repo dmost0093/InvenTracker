@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.LinearLayout"
+    tools:context="comp3350.inventracker.ui.ProductModelItemsActivity">
+    
+    <View style="@style/Divider.Thick" />
+    <View style="@style/Spacer.Small" />
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        >
+    
+        <TableRow>
+            <TextView
+                style="@style/TextViewTitle"
+                android:id="@+id/productModelName"
+                android:minHeight="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/mock_product_model_name"
+                android:layout_span="8" />
+        
+            <Button
+                style="@style/Button.Action.Confirm"
+                android:text="@string/add"
+                android:onClick="buttonAddInventory"
+                android:layout_span="4"
+                />
+    
+        </TableRow>
+    
+        <View style="@style/Spacer.Small" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Small" />
+    
+        <TableRow>
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_model_number"
+                android:layout_span="3"/>
+            <TextView
+                android:id="@+id/modelNumber"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_product_model_number"
+                android:layout_span="2"/>
+            
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_category"
+                android:layout_span="3"/>
+            <TextView
+                android:id="@+id/productCategory"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_category_name"
+                android:layout_span="4"/>
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_available"
+                android:layout_span="3"/>
+            <TextView
+                android:id="@+id/availableQuantity"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_quantity"
+                android:layout_span="2"/>
+            
+            <TextView
+                style="@style/TableRow.Large.Label"
+                android:text="@string/display_size"
+                android:layout_span="3"/>
+            <TextView
+                android:id="@+id/productSize"
+                style="@style/TableRow.Large.Value"
+                android:text="@string/mock_size"
+                android:layout_span="4"/>
+        </TableRow>
+    </TableLayout>
+    
+    <View style="@style/Spacer.Small" />
+    <View style="@style/Divider.Thick" />
+    <View style="@style/Spacer.Large" />
+    
+    <ListView
+        android:id="@+id/listViewInventoryForProductModel"
+        style="@style/ListModern"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/listitem_product_model_inventory" />
+
+</LinearLayout>

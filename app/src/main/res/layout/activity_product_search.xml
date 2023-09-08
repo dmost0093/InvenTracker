@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.ProductSearchActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/model_number_lookup" />
+    </LinearLayout>
+    
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+        
+        <TextView
+            style="@style/SubHeader"
+            android:text="@string/product_model_id" />
+        
+        <View style="@style/Spacer.Large" />
+    
+        <EditText
+            style="@style/TableRow.Large.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/modelIdInput"
+            android:inputType="number"
+            android:hint="@string/product_model_id"
+            android:autofillHints="" />
+        
+        <TextView
+            android:id="@+id/errorMessage"
+            style="@style/ErrorMessage" />
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="Search"
+            android:onClick="buttonSearch" />
+    </LinearLayout>
+    
+</RelativeLayout>

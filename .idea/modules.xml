@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InvenTracker.iml" filepath="$PROJECT_DIR$/.idea/modules/InvenTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/InvenTracker.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ajay.InvenTracker.iml" filepath="$PROJECT_DIR$/.idea/modules/ajay.InvenTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ajay.InvenTracker.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/to-be-determined.iml" filepath="$PROJECT_DIR$/.idea/modules/to-be-determined.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/to-be-determined.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

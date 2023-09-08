@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="#FFFFFF"
+    android:translationZ="6dp">
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Large.Label"
+            android:text="@string/display_category"
+            android:layout_span="4" />
+        
+        <TextView
+            android:id="@+id/categoryName"
+            style="@style/TableRow.Large.Value"
+            android:text="@string/mock_category_name"
+            android:layout_span="8" />
+    
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Small.Label"
+            android:text="@string/storage_size"
+            android:layout_span="4" />
+        
+        <TextView
+            android:id="@+id/storageSize"
+            style="@style/TableRow.Small.Value"
+            android:text="@string/mock_size"
+            android:layout_span="8" />
+    
+    </TableRow>
+    
+</TableLayout>

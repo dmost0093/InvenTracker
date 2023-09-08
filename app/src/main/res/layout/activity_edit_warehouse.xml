@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.EditWarehouseActivity">
+    
+    
+    <LinearLayout
+        style="@style/LinearLayoutContent">
+        
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+        
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/edit_warehouse" />
+        
+        <View style="@style/Spacer.Medium" />
+        <View style="@style/Divider.Thin" />
+        <View style="@style/Spacer.Large" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        style="@style/LinearLayoutCenteredVertical.Input">
+        
+        <View style="@style/Spacer.Large" />
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            
+            <TableRow />
+            <TableRow>
+                <View style="@style/Spacer.Large" />
+            </TableRow>
+            
+            <TableRow>
+                <View style="@style/Spacer.Large" />
+            </TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/warehouse_capacity"
+                    android:layout_span="6" />
+    
+                <EditText
+                    android:id="@+id/input_warehouseCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_span="8" />
+            </TableRow>
+            
+            <TableRow android:layout_span="12">
+                <TextView
+                    android:id="@+id/errorMessage"
+                    style="@style/ErrorMessage" />
+            </TableRow>
+        
+        </TableLayout>
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/resetButton"
+            style="@style/Button.Action.Reset"
+            android:text="@string/reset" />
+    
+        <View style="@style/Spacer.Large" />
+    
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/confirm" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

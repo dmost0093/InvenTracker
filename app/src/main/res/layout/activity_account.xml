@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AccountActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/account" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical">
+    
+        <Button
+            android:id="@+id/buttonChangePassword"
+            style="@style/Button.Home"
+            android:text="@string/change_password"
+            android:onClick="buttonChangePassword" />
+    
+        <Button
+            android:id="@+id/buttonLogout"
+            style="@style/Button.Home"
+            android:text="@string/logout"
+            android:onClick="buttonLogout" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

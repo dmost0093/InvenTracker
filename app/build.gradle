@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "comp3350.inventracker"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'comp3350.inventracker'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    testImplementation group: 'com.google.guava', name: 'guava', version: '25.1-jre'
+    // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+    implementation group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.+'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.annotation:annotation:1.0.0'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+}

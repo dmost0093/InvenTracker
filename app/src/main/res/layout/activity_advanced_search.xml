@@ -1,0 +1,155 @@
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.AdvancedSearchActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/advanced_search" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+    
+            <TableRow>
+                <TextView
+                    style="@style/SubHeader"
+                    android:text="@string/search_criteria"
+                    android:layout_span="12" />
+            </TableRow>
+    
+            <TableRow>
+                
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/category_id"
+                    android:layout_span="4" />
+                
+                <Spinner
+                    android:id="@+id/categoryDropdown"
+                    android:inputType="number"
+                    android:layout_span="8"
+                    android:minHeight="50dp" />
+                
+            </TableRow>
+            
+            <TableRow>
+                
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/warehouse"
+                    android:layout_span="4" />
+        
+                <Spinner
+                    android:id="@+id/warehouseDropdown"
+                    android:inputType="number"
+                    android:layout_span="8"
+                    android:minHeight="50dp" />
+    
+            </TableRow>
+    
+            <View style="@style/Spacer.Large" />
+    
+    
+            <TableRow>
+                <TextView
+                    style="@style/SubHeader"
+                    android:text="@string/availability"
+                    android:layout_span="12" />
+            </TableRow>
+    
+            <TableRow>
+        
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/include_out_of_stock"
+                    android:layout_span="7" />
+        
+                <CheckBox
+                    android:id="@+id/checkboxOutOfStock"
+                    android:layout_span="2">
+                    
+                </CheckBox>
+    
+            </TableRow>
+    
+            <View style="@style/Spacer.Large" />
+    
+            <TableRow>
+                <TextView
+                    style="@style/SubHeader"
+                    android:text="@string/price"
+                    android:layout_span="12" />
+    
+            </TableRow>
+            
+            <TableRow>
+                
+                <EditText
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/input_minMSRP"
+                    android:inputType="number"
+                    android:layout_span="5"
+                    android:hint="@string/min_price"
+                    android:autofillHints="minPrice" />
+    
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/range"
+                    android:layout_gravity="center"
+                    android:layout_span="2" />
+    
+                <EditText
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/input_maxMSRP"
+                    android:inputType="number"
+                    android:layout_span="5"
+                    android:hint="@string/max_price"
+                    android:autofillHints="maxPrice" />
+            </TableRow>
+    
+            <TextView
+                android:id="@+id/errorMessage"
+                style="@style/ErrorMessage" />
+    
+            <TableRow>
+                <TextView
+                    style="@style/SubHeader"
+                    android:text="Sorting"
+                    android:layout_span="12" />
+            </TableRow>
+    
+            <TableRow>
+        
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="Sort By"
+                    android:layout_span="4" />
+        
+                <Spinner
+                    android:id="@+id/sortByDropdown"
+                    android:inputType="number"
+                    android:layout_span="8"
+                    android:minHeight="50dp" />
+    
+            </TableRow>
+        
+        </TableLayout>
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/search"
+            android:onClick="buttonSearch" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

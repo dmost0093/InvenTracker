@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350.inventracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+                android:name=".ui.LoginActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    
+        <activity android:name=".ui.RegistrationActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.ProductSearchActivity" />
+        <activity android:name=".ui.AdvancedSearchActivity" />
+        <activity android:name=".ui.AccountActivity" />
+        <activity android:name=".ui.AdminHomeActivity" />
+        <activity android:name=".ui.PasswordUpdateActivity" />
+        <activity android:name=".ui.SearchResultsActivity" />
+        <activity android:name=".ui.ProductModelItemsActivity" />
+        <activity android:name=".ui.AddInventoryActivity" />
+        <activity android:name=".ui.MoveInventoryActivity" />
+        <activity android:name=".ui.ViewItemActivity" />
+        <activity android:name=".ui.WarehouseActivity" />
+        <activity android:name=".ui.AddWarehouseActivity" />
+        <activity android:name=".ui.ViewCategoriesActivity" />
+        <activity android:name=".ui.AddCategoryActivity" />
+        <activity android:name=".ui.AddProductModelActivity" />
+        <activity android:name=".ui.WarehouseInfoActivity"/>
+        <activity android:name=".ui.EditWarehouseActivity"/>
+    </application>
+
+</manifest>

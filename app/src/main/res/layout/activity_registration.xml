@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Home.RelativeLayout"
+    tools:context="comp3350.inventracker.ui.RegistrationActivity">
+    
+    <LinearLayout style="@style/LinearLayoutContent">
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/HomePageHeader"
+            android:text="@string/register" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/LinearLayoutCenteredVertical.Input">
+        
+        <TextView
+            style="@style/SubHeader"
+            android:text="@string/registration_details" />
+        
+        <View style="@style/Spacer.Large" />
+        
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/choose_username"
+                    android:layout_span="6"
+                    android:labelFor="@id/username"/>
+                
+                <EditText
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/username"
+                    android:inputType="text"
+                    android:layout_span="6"
+                    android:autofillHints="" />
+            
+            </TableRow>
+    
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Small.Info"
+                    android:text="@string/new_username_msg"
+                    android:layout_span="12" />
+            </TableRow>
+    
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/is_admin"
+                    android:layout_span="6"
+                    android:labelFor="@id/isAdmin"/>
+        
+                <CheckBox
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/isAdmin"
+                    android:layout_span="6"
+                    android:autofillHints="" />
+    
+            </TableRow>
+            
+            <TableRow>
+                <View style="@style/Spacer.Large" /></TableRow>
+            
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/choose_password"
+                    android:layout_span="6"
+                    android:labelFor="@id/password"/>
+                
+                <EditText
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_span="6"
+                    android:autofillHints="" />
+            </TableRow>
+    
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Small.Info"
+                    android:text="@string/new_password_msg"
+                    android:layout_span="12" />
+            </TableRow>
+    
+            <TableRow>
+                <View style="@style/Spacer.Large" /></TableRow>
+    
+            <TableRow>
+                <TextView
+                    style="@style/TableRow.Large.Value"
+                    android:text="@string/confirm_password"
+                    android:layout_span="6"
+                    android:labelFor="@id/password"/>
+        
+                <EditText
+                    style="@style/TableRow.Large.Input"
+                    android:id="@+id/passwordConfirm"
+                    android:inputType="textPassword"
+                    android:layout_span="6"
+                    android:autofillHints="" />
+            </TableRow>
+        
+        </TableLayout>
+        
+        <TextView
+            android:id="@+id/errorMessage"
+            style="@style/ErrorMessage" />
+        
+        <View style="@style/Spacer.Large" />
+        
+        <Button
+            android:id="@+id/buttonConfirmRegistration"
+            style="@style/Button.Action.Confirm.Wide"
+            android:text="@string/confirm_registration"
+            android:onClick="buttonConfirmRegistration" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

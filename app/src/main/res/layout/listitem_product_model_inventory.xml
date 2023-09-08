@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="#FFFFFF"
+    android:translationZ="6dp">
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Large.Label"
+            android:text="@string/display_warehouse"
+            android:layout_span="4" />
+        
+        <TextView
+            android:id="@+id/warehouseNameValue"
+            style="@style/TableRow.Large.Value"
+            android:text="@string/mock_warehouse_name"
+            android:layout_span="8" />
+    
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Small.Label"
+            android:text="@string/display_arrived"
+            android:layout_span="4" />
+        
+        <TextView
+            android:id="@+id/arrivalDateValue"
+            style="@style/TableRow.Small.Value"
+            android:text="@string/mock_arrival_date"
+            android:layout_span="8" />
+    
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            style="@style/TableRow.Small.Label"
+            android:text="@string/display_item_number"
+            android:layout_span="4" />
+        
+        <TextView
+            android:id="@+id/itemNumberValue"
+            style="@style/TableRow.Small.Label"
+            android:text="@string/mock_item_id"
+            android:layout_span="8" />
+    
+    </TableRow>
+
+</TableLayout>
